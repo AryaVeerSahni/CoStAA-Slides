@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Doctor Glitch";
+    src: url(./Doctor\ Glitch.otf);
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url(./Orbitron-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: 16/9;
+    background: url(imgs/fullBg.png) no-repeat center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.corners {
+    /* background: url(imgs/corners.png) no-repeat center; */
+    background-size: contain;
+    margin-top: 18.7vh;
+    width: 87.6vw;
+    aspect-ratio: 253/125;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.corner {
+    position: absolute;
+    z-index: 200;
+    height: 82px;
+    width: 82px;
+    filter: drop-shadow(0 0 15px #00ffff);
+    border-color: #00ffff;
+    border-style: solid;
+}
+.corner:nth-child(1) {
+    border-width: 8px 0 0 8px;
+    top: 2rem;
+    left: 1rem;
+}
+.corner:nth-child(2) {
+    border-width: 8px 8px 0 0;
+    top: 2rem;
+    right: 1rem;
+}
+.corner:nth-child(3) {
+    border-width: 0 8px 8px 0;
+    bottom: 2rem;
+    right: 1rem;
+}
+.corner:nth-child(4) {
+    border-width: 0 0 8px 8px;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.tablet {
+    position: relative;
+    background: url(imgs/rectangleBox.png) no-repeat center;
+    background-size: cover;
+    z-index: 100;
+    width: 80.15vw;
+    height: 63.6vh;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transition: clip-path 1s;
+    border: 8px solid #00FFFF;
+    box-shadow: 0 0 12px #00ffff;
+    /*filter: drop-shadow(0 0 15px #00ffff);*/
+
+    transition: width 0.75s linear;
+}
+
+.tabletToggle {
+    background: url(imgs/rectangleBoxEmpty.png) no-repeat center;
+    background-size: cover;
+    box-shadow: none;
+}
+
+.shadowDiv {
+    filter: drop-shadow(0 0 10px #00ffff);
+}
+
+.imgSec {
+    background-color: #00FFFF;
+    width: 21.3vw;
+    height: 47vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    /*filter: drop-shadow(0 0 10px #00ffff);*/
+}
+
+.costaaImg {
+    width: calc(21.3vw - 7px);
+    height: calc(47vh - 7px);
+    object-fit: cover;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+.detailsSec {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 12vh;
+    right: 6vw;
+
+    text-align: center;
+}
+
+.disNone {
+    display: none;
+}
+
+.nameDiv {
+    font-family: "Doctor Glitch";
+    font-size: 3.59vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124.27%; /* 85.628px */
+    letter-spacing: 0.65vw;
+    text-transform: uppercase;
+
+    padding: 10px;
+
+    background: linear-gradient(134deg, #77FDFC 34.67%, #CDF3FE 63.55%, #DC95FD 88.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.upLine {
+    width: 44.24vw;
+    height: 2.5px;
+    filter: drop-shadow(0 0 3px #00FFFF);
+    background-image: linear-gradient(to right, #223E62, #587FA2, #D3F7FD, #A5B9D2, #989DD9, #7979D9, #424B79);
+    margin: 2vh 0;
+}
+
+.deptDiv {
+    width: 36.27vw;
+
+    color: #4DF4FC;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132.567%; /* 44.356px */
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.imgsHidden {
+    display: none;
+}
