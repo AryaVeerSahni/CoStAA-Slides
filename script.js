@@ -107,29 +107,29 @@ function everything(name, depName, imgPath) {
             detailsSecJs.classList.remove('disNone');
             clearInterval(glitchInterval2);
         }, 500)
-    }, 5000)
+    }, 4500)
 }
 
 document.addEventListener('keydown', event=>{
     if(event.key === '1'){
         everything(`Atharv<br>Agarwal`, `Department of Visual Media`, `atharvBhaiya.png`);
     }
-    if(event.key === '2'){
-        everything(`Anagha<br>Sharma`, `Department of<br>Publications and Correspondence`, `anaghaDidi.png`);
-    }
-    if(event.key === '3'){
-        everything(`Shreyak<br>Shintre`, `Department of Controls`, `shreyakBhaiya.png`);
-    }
     if(event.key === '4'){
-        everything(`Shivansh<br>Rastogi`, `Department of<br>Sponsorship and Marketing`, `shivanshBhaiya.png`);
+        everything(`Anagha<br>Sharma`, `Department of<br>Publications and Correspondence<br>for APOGEE`, `anaghaDidi.png`);
     }
     if(event.key === '5'){
-        everything(`Shreya<br>Karnwal`, `Department of<br>Reception and Accommodation`, `shreyaDidi.png`);
-    }
-    if(event.key === '6'){
-        everything(`Aurvind<br>Mohanty`, `Department of<br>Art, Design and Publicity`, `aurvindBhaiya.png`);
+        everything(`Shreyak<br>Shintre`, `Department of Controls`, `shreyakBhaiya.png`);
     }
     if(event.key === '7'){
+        everything(`Shivansh<br>Rastogi`, `Department of<br>Sponsorship and Marketing`, `shivanshBhaiya.png`);
+    }
+    if(event.key === '6'){
+        everything(`Shreya<br>Karnwal`, `Department of<br>Reception and Accommodation`, `shreyaDidi.png`);
+    }
+    if(event.key === '3'){
+        everything(`Aurvind<br>Mohanty`, `Department of<br>Art, Design and Publicity`, `aurvindBhaiya.png`);
+    }
+    if(event.key === '2'){
         everything(`Ishita<br>Sethi`, `Department of<br>Paper Evaluation and Presentation`, `ishitaDidi.png`);
     }
     if(event.key === '8'){
