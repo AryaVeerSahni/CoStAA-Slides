@@ -56,7 +56,7 @@ function everything(name, depName, imgPath) {
     setTimeout(()=>{
         costaaGlitch.startGlitch();
         costaaImgJs.src = `imgs/${imgPath}`;
-    }, 2500)
+    }, 2000)
     
     setTimeout(()=>{
         costaaGlitch.stopGlitch();
@@ -64,7 +64,7 @@ function everything(name, depName, imgPath) {
                 <span class="upLine"></span>
                 <div class="deptDiv">${depName}</div>
                 <span class="upLine"></span>`
-    }, 3000)
+    }, 2500)
 
     setTimeout(()=>{
         tab.style.width = '80.15vw';
@@ -92,7 +92,7 @@ function everything(name, depName, imgPath) {
             duration: 0.75,
             ease: 'linear'
         })
-    }, 3500)
+    }, 2500)
 
     setTimeout(()=>{
         const glitchInterval2 = setInterval(()=>{
@@ -107,7 +107,7 @@ function everything(name, depName, imgPath) {
             detailsSecJs.classList.remove('disNone');
             clearInterval(glitchInterval2);
         }, 500)
-    }, 4500)
+    }, 3500)
 }
 
 document.addEventListener('keydown', event=>{
