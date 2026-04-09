@@ -8,7 +8,7 @@ const detailsSecJs = document.querySelector('#detailsSecId');
 const costaaImgJs = document.querySelector('.costaaImg');
 
 const deptDivJs = document.querySelector('.deptDiv');
-const downLine = document.querySelectorAll('.upLine')[1];
+const Lines = document.querySelectorAll('.upLine');
 
 const costaaGlitch = PowerGlitch.glitch(costaaImgJs, {
     playMode: "manual"
@@ -113,29 +113,39 @@ function everything(name, depName, imgPath) {
 document.addEventListener('keydown', event=>{
     if(event.key === '1'){
         everything(`Atharv<br>Agarwal`, `Department of Visual Media`, `atharvBhaiya.png`);
+        Lines.classList.remove('disNone');
+        detailsSecJs.style.top = '12vh';
     }
     if(event.key === '4'){
-        everything(`Anagha<br>Sharma`, `Department of<br>Publications and Correspondence<br>for APOGEE`, `anaghaDidi.png`);
+        everything(`Anagha<br>Sharma`, `Department of<br>Publications and<br>Correspondence<br>for APOGEE`, `anaghaDidi.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '5'){
         everything(`Shreyak<br>Shintre`, `Department of Controls`, `shreyakBhaiya.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '7'){
-        everything(`Shivansh<br>Rastogi`, `Department of<br>Sponsorship and Marketing`, `shivanshBhaiya.png`);
+        everything(`Shivansh<br>Rastogi`, `Department of<br>Sponsorship and<br>Marketing`, `shivanshBhaiya.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '6'){
-        everything(`Shreya<br>Karnwal`, `Department of<br>Reception and Accommodation`, `shreyaDidi.png`);
+        everything(`Shreya<br>Karnwal`, `Department of<br>Reception and<br>Accommodation`, `shreyaDidi.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '3'){
-        everything(`Aurvind<br>Mohanty`, `Department of<br>Art, Design and Publicity`, `aurvindBhaiya.png`);
+        everything(`Aurvind<br>Mohanty`, `Department of<br>Art, Design<br>and Publicity`, `aurvindBhaiya.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '2'){
-        everything(`Ishita<br>Sethi`, `Department of<br>Paper Evaluation and Presentation`, `ishitaDidi.png`);
+        everything(`Ishita<br>Sethi`, `Department of<br>Paper Evaluation<br>and Presentation`, `ishitaDidi.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '8'){
         everything(`Aditya<br>Khandelwal`, `General Secretary,<br>Students' Union`, `adityaBhaiya.png`);
+        Lines.classList.remove('disNone');
     }
     if(event.key === '9'){
         everything(`Sajal<br>Yadav`, `President,<br>Students' Union`, `sajalBhaiya.png`);
+        Lines.classList.remove('disNone');
     }
 })
