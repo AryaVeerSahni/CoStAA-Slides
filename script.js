@@ -132,12 +132,17 @@ document.addEventListener('keydown', event=>{
     if(event.key === '0'){
         everything(`Welcome To<br><br><span id="apogee">APOGEE</span>`, ``, `apogeeLogo.png`);
         setTimeout(()=>{
-            shadowDivJs.classList.add('disNone');
             line1.classList.add('disNone');
             line2.classList.add('disNone');
             detailsSecJs.classList.remove('detailsSecPosn2');
             detailsSecJs.classList.add('detailsSecPosn1');
+            costaaGlitch.startGlitch();
+            costaaImgJs.src = `imgs/${imgPath}`;
         }, 1500)
+        setTimeout(()=>{
+            costaaGlitch.stopGlitch();
+            shadowDivJs.classList.add('disNone');
+        }, 2000)
     }
     if(event.key === '1'){
         everything(`Atharv<br>Agarwal`, `Department of Visual Media`, `atharvBhaiya.png`);
