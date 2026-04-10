@@ -6,6 +6,7 @@ const corner4 = document.querySelectorAll(`.corner`)[3];
 const shadowDivJs = document.querySelector('#shadowDivId');
 const detailsSecJs = document.querySelector('#detailsSecId');
 const costaaImgJs = document.querySelector('.costaaImg');
+const nameDivJs = document.querySelector('.nameDiv');
 const deptDivJs = document.querySelector('#deptDivId');
 
 const line1 = document.querySelector('#upline');
@@ -14,6 +15,10 @@ const line2 = document.querySelector('#downline');
 const costaaGlitch = PowerGlitch.glitch(costaaImgJs, {
     playMode: "manual"
 });
+
+const nameGlitch = PowerGlitch.glitch(nameDivJs, {
+    playMode: "always"
+})
 
 function everything(name, depName, imgPath) {
     const glitchInterval1 = setInterval(()=>{
@@ -61,7 +66,11 @@ function everything(name, depName, imgPath) {
     
     setTimeout(()=>{
         costaaGlitch.stopGlitch();
-        detailsSecJs.querySelector('.nameDiv').innerHTML = name;
+
+        detailsSecJs.querySelectorAll('.nameDiv').forEach(el => {
+            el.innerHTML = name;
+        });
+
         detailsSecJs.querySelector('.deptDiv').innerHTML = depName;
     }, 2500)
 
