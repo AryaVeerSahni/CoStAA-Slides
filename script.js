@@ -121,7 +121,7 @@ function photoAppear() {
 
 document.addEventListener('keydown', event=>{
     if(event.key === '0'){
-        everything(`Welcome To<br><br><span id="apogee">APOGEE</span>`, ``, `sajalBhaiya.png`);
+        everything(`Welcome To<br><br><span id="apogee">APOGEE</span>`, ``, `apogeeLogo.png`);
         setTimeout(()=>{
             shadowDivJs.classList.add('disNone');
             line1.classList.add('disNone');
