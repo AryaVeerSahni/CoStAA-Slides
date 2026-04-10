@@ -38,31 +38,31 @@ function everything(name, depName, imgPath) {
         tab.style.width = '30vw';
         gsap.to(corner1, {
             left: '30%',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner2, {
             right: '30%',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner3, {
             right: '30%',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner4, {
             left: '30%',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         
-    }, 750)
+    }, 500)
 
     setTimeout(()=>{
         costaaGlitch.startGlitch();
         costaaImgJs.src = `imgs/${imgPath}`;
-    }, 2000)
+    }, 1750)
     
     setTimeout(()=>{
         costaaGlitch.stopGlitch();
@@ -72,35 +72,35 @@ function everything(name, depName, imgPath) {
         });
 
         detailsSecJs.querySelector('.deptDiv').innerHTML = depName;
-    }, 2500)
+    }, 2000)
 
     setTimeout(()=>{
         tab.style.width = '80.15vw';
         gsap.to(corner1, {
             top: '2rem',
             left: '1rem',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner2, {
             top: '2rem',
             right: '1rem',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner3, {
             bottom: '2rem',
             right: '1rem',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
         gsap.to(corner4, {
             bottom: '2rem',
             left: '1rem',
-            duration: 0.75,
+            duration: 0.5,
             ease: 'linear'
         })
-    }, 2500)
+    }, 2000)
 
     setTimeout(()=>{
         const glitchInterval2 = setInterval(()=>{
@@ -115,7 +115,7 @@ function everything(name, depName, imgPath) {
             detailsSecJs.classList.remove('disNone');
             clearInterval(glitchInterval2);
         }, 500)
-    }, 3500)
+    }, 3000)
 }
 
 function photoAppear() {
